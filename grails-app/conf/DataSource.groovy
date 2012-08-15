@@ -1,3 +1,4 @@
+
 dataSource {
     pooled = true
     driverClassName = "org.h2.Driver"
@@ -28,7 +29,7 @@ environments {
             dbCreate = "update"
             driverClassName = "org.postgresql.Driver"
             dialect = org.hibernate.dialect.PostgreSQLDialect
-        
+
             uri = new URI(System.env.DATABASE_URL?:"postgres://test:test@localhost/test")
 
             url = "jdbc:postgresql://"+uri.host+uri.path
