@@ -4,6 +4,7 @@ package grails20test
 
 import grails.test.mixin.*
 import org.junit.*
+import org.joda.time.DateMidnight;
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
@@ -12,6 +13,6 @@ import org.junit.*
 class PostTests {
 
     void testSomething() {
-       fail "Implement me"
+       assert new Post():getDatePosted() == new DateMidnight();
     }
 }

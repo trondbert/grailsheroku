@@ -35,5 +35,6 @@ grails.project.dependency.resolution = {
         runtime 'postgresql:postgresql:9.1-901-1.jdbc4'
 
         compile 'joda-time:joda-time:2.1'
+        compile ('log4j:log4j:1.2.16')
     }
 }

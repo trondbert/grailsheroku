@@ -4,8 +4,9 @@ import org.joda.time.DateMidnight;
 
 class Post {
 
-	DateMidnight    datePosted;
+	DateMidnight    datePosted = new DateMidnight();
 	String			user;
+	String			content;
 
     static constraints = {
     }
