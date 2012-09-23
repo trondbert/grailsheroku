@@ -1,10 +1,10 @@
 package grails20test
 
-import org.joda.time.DateMidnight;
+import java.util.Date
 
 class Post {
 
-	DateMidnight    datePosted = new DateMidnight();
+	Date    		datePosted = new Date()
 	String			user;
 	String			content;
 

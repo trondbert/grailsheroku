@@ -1,3 +1,5 @@
+import grails20test.Post
+
 class BootStrap {
 
     def init = { servletContext ->
