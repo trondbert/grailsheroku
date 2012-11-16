@@ -9,4 +9,10 @@ class PostController {
     def list() {
     	[postList : Post.list()]
     }
+	
+	def create() {
+		Post post = new Post(params)
+		post.save() 
+		redirect action: "list"
+	}
 }

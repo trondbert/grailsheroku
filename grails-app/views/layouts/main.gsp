@@ -14,12 +14,19 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+		<script type ="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.8.2-min.js')}"></script>
+		<script type ="text/javascript" src="${resource(dir: 'js', file: 'application.js')}"></script>
 		<g:layoutHead/>
-        <r:layoutResources />
+        <r:layoutResources/>
 	</head>
 	<body>
 		<div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-		<g:layoutBody/>
+		<div id="leftMenu" role="complementary">
+			<g:link class="create" controller="post" action="list">All posts</g:link>
+		</div>
+		<div id="pageBody">
+			<g:layoutBody/>
+		</div>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>

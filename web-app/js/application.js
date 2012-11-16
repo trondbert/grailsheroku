@@ -7,3 +7,9 @@ if (typeof jQuery !== 'undefined') {
 		});
 	})(jQuery);
 }
+
+function hideAndShow(hideThis, showThis) {
+	$('#'+hideThis).hide();
+	$('#'+showThis).show();
+	
+}

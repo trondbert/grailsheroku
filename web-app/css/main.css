@@ -206,13 +206,13 @@ fieldset,
 	padding: 0.3em 1.8em 1.25em;
 	position: relative;
 	zoom: 1;
-	border: none;
 }
 
 .property-list .fieldcontain {
 	list-style: none;
 	overflow: hidden;
 	zoom: 1;
+	float: both;	
 }
 
 .fieldcontain {
@@ -582,4 +582,30 @@ th:hover, tr:hover {
 a.skip {
 	position: absolute;
 	left: -9999px;
+}
+
+#leftMenu {
+	background-color: #eee;
+	border: .2em solid #fff;
+	margin: 2em 2em 1em;
+	padding: 1em;
+	width: 12em;
+	float: left;
+	-moz-box-shadow: 0px 0px 1.25em #ccc;
+	-webkit-box-shadow: 0px 0px 1.25em #ccc;
+	box-shadow: 0px 0px 1.25em #ccc;
+	-moz-border-radius: 0.6em;
+	-webkit-border-radius: 0.6em;
+	border-radius: 0.6em;
+}
+
+#pageBody {
+	margin: 2em 1em 1.25em 18em;
+}
+
+.postBox {
+	background-color : #FFEEEE;
+	border: 0.2em;
+	margin: 1em 0em 1em 0em;
+	float: both;
 }
