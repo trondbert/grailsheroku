@@ -9,11 +9,15 @@ class BootStrap {
 		if (!Post.count()) {
             new Post(user: "Mike", content : "Hi all").save(failOnError: true)            
         }
-		def adminRole = new Role(authority: "ROLE_ADMIN").save()
-		def memberRole = new Role(authority: 'ROLE_MEMBER').save()
+		def adminRole = new Role(authority: "ROLE_ADMIN")
+		adminRole.save()
+		def memberRole = new Role(authority: 'ROLE_MEMBER')
+		memberRole.save()
 		
 		def member = new User(username: "member", password: "member", enabled: true)
+		member.save()
 		def admin = new User(username: "admin", password: "admin", enabled: true)
+		admin.save()
 		
 		UserRole.create(member, memberRole)
 		UserRole.create(admin, adminRole)

@@ -28,10 +28,6 @@ html.no-cssgradients {
 	height: 100%;
 }
 
-html * {
-	margin: 0;
-}
-
 body {
 	background: #ffffff;
 	color: #333333;
@@ -45,6 +41,7 @@ body {
 
 #grailsLogo {
 	background-color: #abbf78;
+	height: 70px;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
@@ -604,8 +601,17 @@ a.skip {
 }
 
 .postBox {
-	background-color : #FFEEEE;
+	background-color : #EEFFEE;
 	border: 0.2em;
 	margin: 1em 0em 1em 0em;
 	float: both;
+}
+
+.userInfoBox, .userInfoBox p {
+	float: right;
+	display: table-cell;
+/* 	vertical-align: middle; */
+/* 	text-align: center; */
+	height: 100%;
+	padding: 0.2em; 
 }
