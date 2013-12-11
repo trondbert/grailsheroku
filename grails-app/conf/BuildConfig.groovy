@@ -19,10 +19,16 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenCentral()
         mavenLocal()
+        mavenRepo 'http://repo.spring.io/milestone'
     }
-	plugins {
-		test ":spock:0.7"
-	}
+    dependencies {
+        test "org.spockframework:spock-grails-support:0.7-groovy-2.0"
+    }
+    plugins {
+        test(":spock:0.7") {
+            exclude "spock-grails-support"
+        }
+    }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
         runtime 'postgresql:postgresql:9.1-901-1.jdbc4'

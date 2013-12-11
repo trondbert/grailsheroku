@@ -1,9 +1,10 @@
 package com.trondvalen.blogster
 
-import grails.plugins.springsecurity.Secured;
+import grails.plugin.springsecurity.annotation.Secured;
 
 import com.trondvalen.blogster.Post;
 
+@Secured('permitAll')
 class PostController {
 
     def index() { 
